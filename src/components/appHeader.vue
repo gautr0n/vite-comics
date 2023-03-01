@@ -28,7 +28,7 @@
 .container{
   background-color: white;
   color: #544F55;
-  padding: 0 100px;
+  padding: 0 200px;
   .header{
     display: flex;
     height: 100px;

@@ -9,8 +9,8 @@
 
 <style>
     .main{
-        background-color: #0E0E0E;
-        padding: 50px 100px;
+        background-color: #1C1C1C;
+        padding: 50px 200px;
         color: white;
     }
 </style>
