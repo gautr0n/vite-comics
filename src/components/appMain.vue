@@ -82,25 +82,41 @@
 </script>
 
 <template>
-    <div id="app" class="main">
-        <div v-for="(comic, index) in comics">
+    <div class="jumbotron"></div>
+    <div id="current-series">CURRENT SERIES</div>
+    <div class="main">
+        <div v-for="comic in comics">
             <img v-bind:src="comic.thumb" alt="">
             <div>{{ comic.series }}</div>
         </div>
+        <span class="show-button">SHOW MORE</span>
     </div>
 </template>
 
 <style lang="scss" scoped>
+    #current-series{
+        background-color: #0876DC;
+        color: white;
+        padding: 10px 15px;
+        position: absolute;
+        left: 250px;
+        top: 450px;
+    }
+    .jumbotron{
+        height: 50vh;
+        background-image: url(../assets/jumbotron.jpg);
+        background-size: cover;
+    }
     .main{
         background-color: #1C1C1C;
         padding: 50px 200px;
         color: white;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex start;
+        justify-content: space-between;
         div {
             height: 200px;
-            width: 20%;
+            width: 16%;
             img{
                 width: 80%;
                 height: 80%;
@@ -108,6 +124,13 @@
             div{
                 width: 100%;
             }
+        }
+        .show-button{   
+            background-color: #0876DC;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 40px;
+            translate: 500px;
         }
     }
 </style>
